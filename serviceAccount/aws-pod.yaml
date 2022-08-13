@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+   name: task8
+   namespace: lab4
+   labels:
+     task: "task8"
+spec:
+  serviceAccountName: jalsule1
+  containers:
+  - name: awscli
+    image: amazon/aws-cli:latest
+    command:
+        - sleep
+        - "5000"

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+   name: task9
+   namespace: lab4
+   labels:
+     task: "task9"
+spec:
+  serviceAccountName: jalsule1
+  containers:
+  - name: ambassador
+    image: luksa/kubectl-proxy
